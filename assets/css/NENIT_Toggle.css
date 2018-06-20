@@ -1,0 +1,152 @@
+SECTION.padding-xs {
+  padding:36px 0;
+}
+
+SECTION.dark {
+  background-color:rgba(228,71,4,0.55);
+  border-bottom:rgba(255, 255, 255, 0.1) 1px solid;
+}
+
+DIV.toggle {
+  margin:10px 0 0;
+  position:relative;
+  clear:both;
+}
+
+DIV.toggle > LABEL {
+  color:#333;
+  background:rgba(0, 0, 0, 0.1);
+  cursor:pointer;
+  font-size:16px;
+  font-weight:normal;
+  padding:10px 20px;
+  position:relative;
+  display:block;
+  border-bottom:rgba(0, 0, 0, 0.03) 1px solid;
+  -webkit-border-radius:0;
+  -moz-border-radius:0;
+  border-radius:0;
+  -webkit-transition:all .10s ease-out;
+  -moz-transition:all .10s ease-out;
+  -o-transition:all .10s ease-out;
+  transition:all 0.10s ease-out;
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+
+SECTION.dark DIV.toggle > LABEL {
+  color:#FFF;
+  background:rgba(0, 0, 0, 0.5);
+}
+
+DIV.toggle DIV.toggle-content {
+  border:rgba(0, 0, 0, 0.03) 1px solid;
+  display:none;
+  background:rgba(0, 0, 0, 0.03);
+  margin-top:-5px;
+  padding:15px 20px;
+  -webkit-border-radius:0;
+  -moz-border-radius:0;
+  border-radius:0;
+}
+
+DIV.toggle DIV.toggle-content P:last-child {
+  margin-bottom:0;
+}
+
+SECTION.dark DIV.toggle DIV.toggle-content {
+  background:rgba(255, 255, 255, 0.05);
+}
+
+SECTION.dark DIV.toggle-content P {
+  color:#fff;
+}
+
+SECTION.dark SECTION H1 {
+  color:#FFF;
+  padding:0 0 12px 0;
+  text-align:center;
+}
+
+DIV.toggle > LABEL:before {
+  content:'';
+  border:6px solid transparent;
+  border-top-color:inherit;
+  position:absolute;
+  top:50%;
+  right:14px;
+  margin-top:-3px;
+}
+
+DIV.toggle > LABEL:hover {
+  background:rgba(0, 0, 0, 0.15);
+}
+
+DIV.toggle.active > LABEL:before {
+  border:6px solid transparent;
+  border-bottom-color:rgba(0, 0, 0, 0.5);
+  right:14px;
+  margin-top:-10px;
+}
+
+.toggle .toggle-content {
+  border:0 !important;
+}
+
+.toggle.toggle-transparent .toggle-content, .toggle.toggle-transparent-body .toggle-content {
+  background:transparent;
+}
+
+.toggle.toggle-transparent-body LABEL {
+  background:rgba(0, 0, 0, 0.03);
+}
+
+.toggle.toggle-transparent-body LABEL:hover {
+  background:rgba(61,59,54,0.38);
+}
+
+.toggle.toggle-transparent LABEL:hover, .toggle.toggle-transparent LABEL {
+  background-color:rgba(215, 40, 40, 0.9);
+  border:0;
+}
+
+.toggle.toggle-transparent DIV.toggle.active LABEL {
+  font-weight:bold;
+}
+
+.toggle.toggle-bordered-simple LABEL:hover, .toggle.toggle-bordered-simple LABEL {
+  border:#CCC 1px solid;
+}
+
+.toggle.toggle-bordered-full LABEL:hover, .toggle.toggle-bordered-full LABEL {
+  border:#CCC 1px solid;
+  border-bottom:0;
+  margin:0;
+}
+
+.toggle.toggle-bordered-full DIV.toggle:last-child > LABEL {
+  border-bottom:#CCC 1px solid;
+}
+
+.toggle.toggle-bordered-full DIV.toggle.active > LABEL {
+  font-weight:bold;
+}
+
+.toggle.toggle-bordered-full .toggle-content {
+  border:#CCC 1px solid !important;
+  border-top:0 !important;
+  border-bottom:0 !important;
+}
+
+.toggle.toggle-bordered-full DIV.toggle {
+  margin:0;
+}
+
+.toggle.toggle-noicon DIV.toggle > LABEL:before {
+  display:none;
+}
+
